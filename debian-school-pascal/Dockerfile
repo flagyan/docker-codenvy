@@ -15,7 +15,7 @@ RUN echo "alias gs=\"git status\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias gc=\"git commit -m\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias gcl=\"git clone\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias ga=\"git add\"" |sudo tee -a /home/user/.bashrc
-RUN echo "alias gp=\"git push\"" |sudo tee -a /home/user/.bashrc
+RUN echo "alias gp=\"git push -u\"" |sudo tee -a /home/user/.bashrc
 
 WORKDIR /projects
 
