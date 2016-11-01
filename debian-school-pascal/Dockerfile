@@ -19,6 +19,7 @@ RUN echo "alias ga=\"git add\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias gaa=\"git add .\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias gp=\"git push -u\"" |sudo tee -a /home/user/.bashrc
 RUN echo "alias grc=\"git rm --cached\"" |sudo tee -a /home/user/.bashrc
+RUN echo "alias gl=\"git log\"" |sudo tee -a /home/user/.bashrc
 
 RUN git config --global user.email "xervondev@gmail.com"
 RUN git config --global user.name "Mika Dede"
