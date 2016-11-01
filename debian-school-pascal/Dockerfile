@@ -1,6 +1,7 @@
 FROM codenvy/debian_jre
 
 RUN sudo apt-get update && \
+    sudo apt-get dist-upgrade && \
     sudo apt-get -y install g++ gcc make gdb gdbserver fp-compiler vim && \
     sudo apt-get clean && \
     sudo apt-get -y autoremove && \
